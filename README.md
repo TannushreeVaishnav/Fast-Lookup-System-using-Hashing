@@ -58,6 +58,15 @@ This table shows how user IDs are distributed across buckets using the hash func
 - **Collision Handling**: Separate chaining using linked lists
 - **Longest Chain**: Bucket 1 with 5 entries
 
+## Time and Space Complexity
+
+- **Insertion**: Average O(1), Worst O(n)  
+- **Lookup (get)**: Average O(1), Worst O(n)  
+- **Building map for n users**: Average O(n), Worst O(n^2)  
+- **Single search query**: Average O(1), Worst O(n)  
+
+- **Space Complexity**: O(n + capacity) ≈ O(n)
+
 ## Real-World Usage
 - Used in authentication systems for instant user status lookups.   
 - Enables quick contact/profile retrieval in large databases.   
